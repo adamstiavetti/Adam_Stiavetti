@@ -30,5 +30,26 @@
 // const area = (num1 = 5, num2=4) => num1*num2
 // console.log("Area: ", area(undefined, undefined));
 
-let age = 0;
-console.log(age ? "alive" : "dead");
+// let age = 0;
+// console.log(age ? "alive" : "dead");
+
+function greet(name){
+    return `Hello, ${name}!`;
+}
+
+const square = function (num){
+    return num * num;
+}
+
+const multiply = (num1, num2) =>{
+    return num1 * num2;
+}
+
+let numbers = [5,10,15,20,25]
+
+let doubled = numbers.map(num => num *2)
+console.log("Doubled numbers: ", doubled)
+
+let filtered = numbers.filter(num => num > 20);
+console.log("Filtered numbers: ", filtered);
+
