@@ -1,0 +1,66 @@
+/*body {*/
+/*    background-color: #DEC6AC;*/
+/*}*/
+
+/*#burger{*/
+/*    color: #808080;*/
+/*}*/
+
+/*#onion{*/
+/*    color: #808080;*/
+/*}*/
+
+/*#fries{*/
+/*    color: #808080;*/
+/*}*/
+
+/*.strawberry{*/
+/*    background: #D2B48C;*/
+/*}*/
+
+/*.Blueberry{*/
+/*    background: #50314C;*/
+/*}*/
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*p{*/
+/*    background: #C0C0C0;*/
+/*    padding: 10px;*/
+/*    margin: 30px;*/
+/*    !*border-style: ridge;*!*/
+/*    !*border-color: bisque;*!*/
+/*    !*border-width: 10px;*!*/
+/*    border: groove 10px bisque;*/
+/*}*/
+
+/*li a {*/
+/*    color: green;*/
+/*}*/
+
+/*body{*/
+/*    color: green;*/
+/*}*/
+/*ol{*/
+/*    color: purple;*/
+/*}*/
+
+body{
+    color: green;
+}
+
+ul{
+    color: purple;
+}
+
+li{
+    color: orange;
+}
+
+.company{
+    color: red;
+}

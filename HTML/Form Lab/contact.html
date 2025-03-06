@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FormLab: Contact</title>
+</head>
+<body>
+<!--creates new tab for the home page icon when clicked on the contact page-->
+<a href="index.html" target="_blank">Home</a>
+<a href="#">Contact</a>
+<form action="/SendTheData" method="get">
+    <br>
+    <label>
+        First Name:
+        <input type="text"
+               name="fName"
+               id=""
+               placeholder="Enter First Name"
+               required
+               maxlength="20"
+        >
+    </label>
+    <br>
+    <br>
+    <label>
+        Last Name:
+        <input type="text"
+               name="lName"
+               id=""
+               placeholder="Enter Last Name"
+               maxlength="20"
+        >
+    </label>
+    <br>
+    <br>
+    <label>
+        Email:
+        <input type="text"
+               name="email"
+               id=""
+               placeholder="Enter Email Address"
+               required pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$"
+        >
+    </label>
+    <br>
+    <br>
+    <label>
+        Phone Number:
+        <input type="tel"
+               name="phoneNumber"
+               id=""
+               placeholder="Enter Phone Number"
+               required
+               title="pattern xxx-xxx-xxxx"
+               pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"
+        >
+    </label>
+    <br>
+    <br>
+    <label>
+        Age:
+        <input type="number"
+               name="age"
+               id=""
+               min="21"
+               max="100"
+               placeholder="Enter Age"
+               required
+        >
+    </label>
+    <br>
+    <br>
+    <label>
+        Password:
+        <input type="password"
+               name="password"
+               id=""
+        >
+    </label>
+    <br>
+    <br>
+    <label>
+        Are You Alive?
+        <input type="radio" name="isAlive" id=""value="yes" checked>Yes
+        <input type="radio" name="isAlive" id=""value="no">No
+        <input type="radio" name="isAlive" id=""value="zombie">Zombie
+    </label>
+    <br>
+    <br>
+    <label>
+        Colors:
+        <input type="checkbox" name="" id="blue"> Blue
+        <input type="checkbox" name="" id="red"> Red
+        <input type="checkbox" name="" id="green"> Green
+        <input type="checkbox" name="" id="purple"> Purple
+    </label>
+    <br>
+    <br>
+    <label>
+        Tell us more about yourself
+        <br>
+        <textarea rows="5" cols="20" maxlength="300" name="selfDescription">
+
+        </textarea>
+    </label>
+    <br>
+    <br>
+    <label>
+        State:
+        <select name="state" id="">
+            <option value="tx">TX</option>
+            <option value="ca">CA</option>
+            <option value="hi">HI</option>
+            <option value="ny">NY</option>
+        </select>
+    </label>
+    <br>
+    <br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</form>
+
+</body>
+</html>

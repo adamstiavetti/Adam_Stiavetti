@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Now Hiring</title>
+    <link rel="icon" type="image/png" href="assets/spaghetti.fav.png">
+</head>
+<body>
+<a href="index.html" target="_blank">Home</a>
+<a href="Menu.html" target="_blank">Menu</a>
+<a href="#">Now Hiring</a>
+
+<form action="/SendTheData" method="post">
+    <br>
+    <label>
+        First Name:
+        <input type="text"
+               name="fName"
+               id=""
+               placeholder="Enter First Name"
+               required
+               minlength="1"
+               maxlength="20"
+        >
+    </label>
+    <br>
+    <br>
+    <label>
+        Last Name:
+        <input type="text"
+               name="lName"
+               id=""
+               placeholder="Enter Last Name"
+               minlength="1"
+               maxlength="20"
+        >
+    </label>
+    <br>
+    <br>
+    <label>
+        Address 1:
+        <input type="text"
+               name="streetAddress"
+               id=""
+               placeholder="Enter Address"
+               required
+        >
+    </label>
+    <br>
+    <br>
+    <label>
+        Address 2:
+        <input type="text"
+               name="address2"
+               id=""
+               placeholder="Enter Address Optional"
+        >
+    </label>
+    <br>
+    <br>
+    <label>
+        City:
+        <input type="text"
+               name="city"
+               id=""
+               required
+               placeholder="Enter City"
+               maxlength="30"
+        >
+    </label>
+    <br>
+    <br>
+    <label>
+        State
+        <select name="state" id="">
+            <option>TX</option>
+            <option>NY</option>
+            <option>CA</option>
+        </select>
+    </label>
+    <br>
+    <br>
+    <label>
+        Age:
+        <input type="number"
+               name="age"
+               id=""
+               min="21"
+               max="99"
+        >
+    </label>
+    <br>
+    <br>
+    <label>
+        Phone Number:
+        <input type="tel"
+               name="telNumber"
+               id=""
+               placeholder="XXX-XXX-XXXX"
+               pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"
+               required
+        >
+    </label>
+    <br>
+    <br>
+    <label>
+        Email:
+        <input type="email"
+               name="email"
+               id=""
+               placeholder="Enter Email Address"
+               pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$"
+        >
+    </label>
+    <br>
+    <br>
+    <label>
+        Password:
+        <input type="password"
+               name="password"
+               id=""
+               required
+               placeholder="Enter Password"
+               pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
+        >
+    </label>
+    <br>
+    <br>
+    <label>
+        Marital Status:
+        <input type="radio" name="isMarried" id="" value="yes" checked> Yes
+        <input type="radio" name="isMarried" id="" value="no"> No
+    </label>
+    <br>
+    <br>
+    <label>
+        Favorite Color:
+        <input type="checkbox" name="" id="blue"> Blue
+        <input type="checkbox" name="" id="green"> Green
+        <input type="checkbox" name="" id="red"> Red
+        <input type="checkbox" name="" id="purple"> Purple
+        <input type="checkbox" name="" id="orange"> Orange
+    </label>
+    <br>
+    <br>
+    <label>
+        Tell us briefly about yourself.
+        <br>
+        <textarea rows="4" cols="30" maxlength="30" name="selfDescription">
+
+        </textarea>
+    </label>
+    <br>
+    <br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+</body>
+</html>
