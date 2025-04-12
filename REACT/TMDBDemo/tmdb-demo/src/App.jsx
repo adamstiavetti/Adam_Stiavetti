@@ -6,8 +6,8 @@ import AboutPage from "./components/AboutPage.jsx";
 import axios, {options} from "axios";
 import MovieCard from "./components/MovieCard.jsx"
 import {useState} from "react";
-import viteConfig from "../vite.config.ts";
 import * as process from "node:process";
+import SearchAppBar from "./components/AppBar.jsx"
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
             params: {language: 'en-US', page: '1'},
             headers: {
                 accept: 'application/json',
-                Authorization: `Bearer${import.meta.env.VITE_TMDB_API_TOKEN}`
+                Authorization: `Bearer${process.env.VITE_TMDB_API_TOKEN }`
             }
         };
         //https://api.themoviedb.org/3/movie/now_playing
@@ -47,6 +47,7 @@ function App() {
       <div>
           <h1>App Comp</h1>
           <Router>
+              <SearchAppBar></SearchAppBar>
               <div className="App">
                   <ul>
                       <li>
