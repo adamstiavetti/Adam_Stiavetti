@@ -1,0 +1,15 @@
+body {
+    background-image: url("./assets/theater.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+h1, title{
+    color: white;
+    text-align: center;
+    padding: 170px;
+}
+
+
